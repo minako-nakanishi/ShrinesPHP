@@ -1,0 +1,1 @@
+CREATE DATABASE shrines character SET utf8 collate utf8_general_ci;
