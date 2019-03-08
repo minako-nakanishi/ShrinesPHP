@@ -7,21 +7,22 @@
     <body>
         <div style="font-size: 22px;">新規登録画面</div>
         <hr>
-        <form name="insert" method="post" action="list.php">
+        <form name="insert" method="post" action="insert.php">
             <div>
-                <label>　神社名　：<input type="text" name="name" maxlength="50"></label>
+                <label>　神社名　：<input type="text" name="name" maxlength="50" required></label>
             </div>
             <div>
-                <label>　ふりがな：<input type="text" name="kana" maxlength="100"></label>
+                <label>　ふりがな：<input type="text" name="kana" maxlength="100" required></label>
             </div>
             <div>
-                <label>　都道府県：<input type="text" name="prefecture" maxlength="20"></label>
+                <label>　都道府県：<input type="text" name="prefecture" maxlength="20" required></label>
             </div>
             <div>
-                <label>　最寄駅　：<input type="text" name="station" maxlength="50"></label>
+                <label>　最寄駅　：<input type="text" name="station" maxlength="50" required></label>
             </div>
             <div>
-                <input type="submit" value="登録" style="margin-left: 200px;">
+                <a href="index.html" style="font-size: 14px;">新規登録画面へ戻る</a>
+                <input type="submit" value="登録" style="margin-left: 150px;">
             </div>
         </form>
     </body>
