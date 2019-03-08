@@ -1,2 +1,1 @@
 # ShrinesPHP
-# ShrinesPHP
