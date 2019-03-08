@@ -14,7 +14,7 @@ function db_connect(){
         $pdos = new PDO($dsns,$db_user,$db_pass); //DBへ接続
         $pdos->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //エラー発生時は例外処理を実施
         $pdos->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-        print "接続に成功しました";
+        //print "接続に成功しました";
     
     } catch (PDOException $Exception){
         die("エラー：".$Exception->getMessage());

@@ -19,9 +19,22 @@ try {
     // 登録したらポップアップ画面を表示する.
     $test_alert = "<script type='text/javascript'>alert('神社を登録しました。');</script>";
     print $test_alert;
+    
+    
 } catch (PDOException $Exception) {
     $pdos->rollBack(); //エラーになったら元の状態に戻す.
     print "エラー：".$Exception->getMessage();
 }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+    </head>
+    <body>
+        <a href="index.php">検索・一覧画面へ戻る</a>
+    </body>
+</html>
+
 
 
