@@ -5,7 +5,7 @@ session_start(); //セッションの開始.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>新規登録画面</title>
+        <title>更新画面</title>
         <meta charset="UTF-8">
     </head>
     <body>
@@ -45,7 +45,7 @@ session_start(); //セッションの開始.
         <hr>
         <form name="update" method="post" action="update.php">
             <div>
-                <label>　神社名　：<input type="text" name="name" value="<?= htmlspecialchars($row['name'],ENT_QUOTES)?>"></label>
+                <label>　神社名　：<input type="text" name="name" value="<?= htmlspecialchars($row['name'],ENT_QUOTES)?>" maxlength="50"></label>
             </div>
             <div>
                 <label>　ふりがな：<input type="text" name="kana" value="<?= htmlspecialchars($row['kana'],ENT_QUOTES)?>" maxlength="100"></label>

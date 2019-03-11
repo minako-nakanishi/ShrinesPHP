@@ -57,7 +57,7 @@
                     <td><?= htmlspecialchars($row['prefecture'],ENT_QUOTES)?></td>
                     <td><?= htmlspecialchars($row['station'],ENT_QUOTES)?></td>
                     <td><a href="updateform.php?id=<?= htmlspecialchars($row['id'],ENT_QUOTES) ?>">更新</a></td>
-                    <td><a>削除</a></td>
+                    <td><a href="delete.php?action=delete&id=<?= htmlspecialchars($row['id'],ENT_QUOTES) ?>">削除</a></td>
                 </tr>
                 <?php
                 }
