@@ -6,7 +6,7 @@
     </head>
     <body>
         <span style="font-size: 22px;">検索・一覧画面</span>&nbsp;
-        <span><a href="insert.html">新規登録画面</a></span>
+        <span><a href="insert.html">新規登録</a></span>
         <hr>
         <!--検索機能-->
         <form name="main" method="post" action="index.php">
@@ -48,7 +48,7 @@
         <!--一覧画面の表示-->
         <table border="1">
             <tbody>
-                <tr><th>神社名</th><th>都道府県</th><th>最寄駅</th></tr>
+                <tr><th>神社名</th><th>都道府県</th><th>最寄駅</th><th></th><th></th></tr>
                 <?php
                 while($row=$stml->fetch(PDO::FETCH_ASSOC)){
                 ?>
@@ -56,6 +56,8 @@
                     <td><?= htmlspecialchars($row['name'],ENT_QUOTES)?></td>
                     <td><?= htmlspecialchars($row['prefecture'],ENT_QUOTES)?></td>
                     <td><?= htmlspecialchars($row['station'],ENT_QUOTES)?></td>
+                    <td><a href="updateform.php">更新</a></td>
+                    <td><a>削除</a></td>
                 </tr>
                 <?php
                 }
