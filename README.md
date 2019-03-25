@@ -3,7 +3,7 @@
 
 使用言語： PHP,HTML
 
-使用DB: MariaDB
+使用DB: MySQL
 
 参考図書： PHP7＋MariaDB／MySQLマスターブック
 
